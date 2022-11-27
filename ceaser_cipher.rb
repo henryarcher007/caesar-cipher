@@ -1,4 +1,3 @@
-
 def ceaser_cipher(string, num)
     string = string.split("")
     ciphered_string = change_letters(string, num)
@@ -9,7 +8,9 @@ def change_letters(string, num)
   i = 0
   string_arr = []
   while i < string.length do
-    if string[i] == string[i].downcase
+    if string[i] == ' '
+      string_arr.push(' ')
+    elsif string[i] == string[i].downcase
       string_arr.push(lowercase(string[i], num))
     elsif string[i] == string[i].upcase
       string_arr.push(upcase(string[i], num))
@@ -48,5 +49,3 @@ def upcase(string, num)
   end
   alphabet[alphabet_index]
 end
-
-  ceaser_cipher('yzAb', 2)
