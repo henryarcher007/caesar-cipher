@@ -7,6 +7,7 @@ end
 def change_letters(string, num)
   i = 0
   string_arr = []
+  #checks if charcter is lowercase or uppercase
   while i < string.length do
     if string[i] == ' '
       string_arr.push(' ')
